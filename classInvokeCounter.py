@@ -6,8 +6,13 @@ class classInvokeCounter:
     def printCounter(self):
         print(classInvokeCounter.counter)
 
+    @classmethod #this is a decorator
+    def printInClass(cls):
+        print(cls.counter)
+
 c1=classInvokeCounter()
 c1.printCounter()
+c1.printInClass()
 c2=classInvokeCounter()
 c2.printCounter()
 c3=classInvokeCounter()
