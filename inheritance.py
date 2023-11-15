@@ -7,7 +7,8 @@ class BClass:
         print(self.message)
 
 class AClass(BClass):
-    def printMessage(self):
+    def printMessage(self): #it makes the Override: the method is overwritten 
+                            #and the method in AClass is the considered method
         print("AClass: "+self.message) #'message' attribute is inherited from BClass
     
 m1 = AClass()
