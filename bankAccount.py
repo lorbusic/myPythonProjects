@@ -1,12 +1,11 @@
+
 class Conto:
     def __init__(self,nome,conto):
         self.nome=nome
-        self.conto=conto
-
-
+        self.conto=conto 
 
 class ContoCorrente(Conto):
-    
+
     def __init__(self,nome,conto,importo):
         super().__init__(nome,conto)
         self.__saldo=float(importo)
